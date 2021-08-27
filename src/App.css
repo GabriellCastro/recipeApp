@@ -1,0 +1,1017 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato , Open Sans , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.meals {
+  align-items: center;
+  background: #0fa36b;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.rocksGlass {
+  animation: shake 1s infinite ease;
+  max-height: 80vh;
+}
+
+/* https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
+.recommendations-box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.recommended-box {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+  height: 172px;
+  margin: 10px;
+  width: 161px;
+}
+
+.recommended-box-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px 6px 0 0;
+  height: 109px;
+  width: 161px;
+}
+
+.recommended-box-category {
+  color: darkgray;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+.recommended-box-name {
+  color: #333;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0 5px;
+}
+
+.meals > .logo {
+  animation: shake 1.5s infinite ease;
+  color: aliceblue;
+  font-family: Montserrat , sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+@keyframes shake {
+
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes clink {
+
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.ingredient-checked {
+  text-decoration: line-through;
+}
+
+
+/* Página de Login */
+.login-page {
+  align-items: center;
+  background-image: url('./images/backgroundLogin.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-logo {
+  margin: 3%;
+  width: 80%;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.login-password input, .login-email input {
+  border-color: #333;
+  border-radius: 28px;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 16px;
+  margin: 12px;
+  padding: 7px;
+}
+
+.login-btn {
+  background-color: #bee34f;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 7px;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.login-btn:disabled {
+  background-color: rgb(133, 133, 133);
+  opacity: 70%;
+}
+
+/* Rodape */
+.footer {
+  align-items: center;
+  background-color: white;
+  bottom: 0;
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+}
+
+.footer > * {
+  padding: 3vw;
+}
+
+.footer img {
+  height: 5vh;
+}
+
+/* Header */
+.header-app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.header-div {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 1.2em;
+  font-weight: 900;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  padding: 2vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-icon {
+  width: 30px;
+}
+
+.profile-icon {
+  width: 30px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+}
+
+.search-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 1%;
+}
+
+.search-input input {
+  border-color: #333;
+  border-radius: 28px;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 16px;
+  margin: 12px;
+  padding: 7px;
+  width: 90vw;
+}
+
+.search-radios label input {
+  margin: 5px;
+  position: relative;
+}
+
+.search-radios label input:checked:after {
+  background-color: rgb(98, 98, 98);
+  border-radius: 100%;
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.search-radios {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+  width: 90%;
+}
+
+
+.filter-btn {
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 7px;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+.drink-div-category {
+  margin: 10px;
+}
+
+.drink-btn-category {
+  background-color: #fac065;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 3px;
+  width: 30%;
+}
+
+.meal-div-category {
+  margin: 10px;
+}
+
+.meal-btn-category {
+  background-color: #e34f5e;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 3px;
+  width: 30%;
+}
+
+/* Página Principal */
+.main-recipes-box {
+  align-items: stretch;
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 9vh;
+  max-width: 100vw;
+}
+
+.meals-recipes-card-box {
+  background: #e34f5e;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+  margin: 3.5% 2%;
+  width: 43%;
+}
+
+.drinks-recipes-card-box {
+  background: #fac065;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+  margin: 3.5% 2%;
+  width: 43%;
+}
+
+.ingredient-recipes-card-box {
+  background: #8e66ff;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+  margin: 3.5% 2%;
+  padding-bottom: 6px;
+  width: 43%;
+}
+
+.main-recipes-box-image {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.main-recipes-box-div-name {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 10vh;
+  text-align: center;
+}
+
+.main-recipes-box-name {
+  align-self: center;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 5px;
+  text-align: center;
+}
+
+.explore-select-input {
+  background-color: white;
+  border-color: #333;
+  border-radius: 28px;
+  border-style: solid;
+  border-width: 3px;
+  font-size: 16px;
+  margin: 12px;
+  padding: 7px;
+  text-align-last: center;
+  width: 90vw;
+}
+
+.explore-btn {
+  background-color: #8e66ff;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  width: 51%;
+}
+
+.explore-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+}
+
+.explore-div a {
+  text-align: center;
+  width: 100%;
+}
+
+/* Página de Perfil */
+.div-profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+}
+
+.div-profile a {
+  text-align: center;
+  width: 100%;
+}
+
+.profile-done-btn {
+  background-color: #4dbb98;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  width: 51%;
+}
+
+.profile-favorite-btn {
+  background-color: #bee34f;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  width: 51%;
+}
+
+.profile-logout-btn {
+  background-color: #333;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 12px;
+  padding: 0.8em;
+  text-transform: uppercase;
+  width: 51%;
+}
+
+.profile-email {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.doneFilters {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.filter-by-all-btn {
+  background-color: #4dbb98;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 3px;
+  width: 30%;
+}
+
+.filter-by-food-btn {
+  background-color: #e34f5e;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 3px;
+  width: 30%;
+}
+
+.filter-by-drink-btn {
+  background-color: #fac065;
+  border-radius: 28px;
+  border-style: none;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 3px;
+  width: 30%;
+}
+
+.recipes-card-box {
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex: 0 0 auto;
+  margin: 3.5% 2%;
+  min-height: 20vh;
+  width: 96vw;
+}
+
+.done-recipes-box-image {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+}
+
+.done-share {
+  text-align: right;
+  width: 20vw;
+}
+
+.done-recipe-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  width: 90%;
+}
+
+.done-recipe-card > * {
+  color: #333;
+  margin: 0.3em;
+  text-decoration: none;
+}
+
+.done-recipe-card a h4 {
+  margin-left: 0.3em;
+}
+
+.done-recipe-card a {
+  margin: 0;
+}
+
+
+.done-recipe-div-tag {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.done-recipe-tag {
+  font-style: italic;
+  margin-right: 0.5em;
+}
+
+/* Página de detalhes  */
+.detail-page {
+  margin-bottom: 50px;
+}
+
+.detail-img {
+  height: 25vh;
+  margin: 0;
+  object-fit: cover;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.food-detail {
+  background-color: #e34f5e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2vh;
+  width: 100vw;
+}
+
+.drink-detail {
+  background-color: #fac065;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2vh;
+  width: 100vw;
+}
+
+.detail-header-btn {
+  align-items: center;
+  display: flex;
+}
+
+.detail-infos {
+  margin: 4vh 2vh;
+}
+
+.detail-ingredients {
+  margin: 3vh;
+}
+
+.detail-description {
+  margin: 3vh;
+}
+
+.detail-ingredients li {
+  list-style-type: none;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.detail-ingredients li:before {
+  color: #8b8b8b;
+  content: '•';
+  display: inline-block;
+  left: -1em;
+  position: absolute;
+}
+
+.div-start-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.div-start-btn a {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.start-btn {
+  background-color: #bee34f;
+  border-radius: 28px;
+  border-style: none;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 7px;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+.continue-btn {
+  background-color: #fac065;
+  border-radius: 28px;
+  border-style: none;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 7px;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+/* Página de Progresso */
+.progress-page {
+  margin-bottom: 50px;
+}
+
+.detail-infos form {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0;
+}
+
+.detail-infos label {
+  margin-top: 1vh;
+}
+
+.progress-checklist {
+  margin-right: 1vh;
+}
+
+.progress-instructions {
+  margin-bottom: 1vh;
+}
+
+.finish-food-btn {
+  background-color: #e34f5e;
+  border-radius: 28px;
+  border-style: none;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 7px;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+.finish-drink-btn {
+  background-color: #fac065;
+  border-radius: 28px;
+  border-style: none;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 7px;
+  position: fixed;
+  text-transform: uppercase;
+}
+
+.finish-food-btn:disabled {
+  background-color: rgb(133, 133, 133);
+  opacity: 70%;
+}
+
+.finish-drink-btn:disabled {
+  background-color: rgb(133, 133, 133);
+  opacity: 70%;
+}
+
+
+/* Icons */
+.share-btn {
+  width: 30px;
+}
+
+.share-btn-btn {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 10px;
+  padding: 7px;
+}
+
+.favorite-btn-btn {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+
+/* Página de Receitas Favoritas */
+.favorite-recipes-box-image {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  height: 100%;
+  object-fit: cover;
+  width: auto;
+}
+
+.div-buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 20vw;
+}
+
+
+.favorite-recipe-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em;
+  width: 90%;
+}
+
+.favorite-recipe-card > * {
+  color: #333;
+  margin: 0.3em;
+  text-decoration: none;
+}
+
+.favorite-recipe-card a {
+  color: #333;
+  text-decoration: none;
+}
+
+.favorite-heart {
+  width: 30px;
+}
+
+.link-black {
+  color: #333;
+}
+
+.link-white {
+  color: white;
+}
+
+.div-null {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and ( min-width : 768px ) {
+
+  .login-page {
+    background-size: cover;
+  }
+
+  .login-logo {
+    width: 30%;
+  }
+
+  .form-login {
+    margin-top: 10%;
+  }
+
+  .footer {
+    height: 6vh;
+    padding: 1% 10%;
+  }
+
+  .footer img {
+    height: 4vh;
+  }
+
+  .header-div {
+    padding: 1% 10%;
+  }
+
+  .search-bar {
+    padding: 0 10%;
+  }
+
+  .search-input input {
+    width: 50vw;
+  }
+
+  .search-radios {
+    width: 60%;
+  }
+
+  .meal-div-category {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+    padding: 0 10%;
+    width: 100vw;
+  }
+
+  .drink-div-category {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+    padding: 0 10%;
+    width: 100vw;
+  }
+
+  .meal-btn-category {
+    font-size: 14px;
+    min-height: 40px;
+  }
+
+  .drink-btn-category {
+    font-size: 14px;
+    min-height: 40px;
+  }
+
+  .meals-recipes-card-box {
+    margin: 1.5%;
+    width: 20%;
+  }
+
+  .drinks-recipes-card-box {
+    margin: 1.5%;
+    width: 20%;
+  }
+
+  .main-recipes-box-name {
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .ingredient-recipes-card-box {
+    margin: 1.5%;
+    width: 20%;
+  }
+
+  .explore-select-input {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+
+  .explore-btn {
+    padding: 1em;
+    width: 20%;
+  }
+
+  .profile-done-btn {
+    padding: 1em;
+    width: 20%;
+  }
+
+  .profile-favorite-btn {
+    padding: 1em;
+    width: 20%;
+  }
+
+  .profile-logout-btn {
+    padding: 1em;
+    width: 20%;
+  }
+
+  .doneFilters {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+  }
+
+  .filter-by-all-btn {
+    font-size: 14px;
+  }
+
+  .filter-by-food-btn {
+    font-size: 14px;
+  }
+
+  .filter-by-drink-btn {
+    font-size: 14px;
+  }
+
+  .recipes-card-box {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: auto;
+    width: 80vw;
+  }
+
+  .done-share {
+    align-self: center;
+  }
+
+  .detail-page {
+    margin-bottom: 90px;
+  }
+
+  .food-detail {
+    padding: 1% 10%;
+  }
+
+
+  .drink-detail {
+    padding: 1% 10%;
+  }
+
+  .detail-infos {
+    margin: 5% 0;
+    padding: 1% 10%;
+  }
+
+  .start-btn {
+    font-size: 18px;
+    margin: 15px;
+    padding: 1em;
+  }
+
+  .continue-btn {
+    font-size: 18px;
+    margin: 15px;
+    padding: 1em;
+  }
+
+  .progress-page {
+    margin-bottom: 90px;
+  }
+
+  .finish-food-btn {
+    font-size: 18px;
+    margin: 15px;
+    padding: 1em;
+  }
+
+  .finish-drink-btn {
+    font-size: 18px;
+    margin: 15px;
+    padding: 1em;
+  }
+
+  .div-buttons {
+    width: auto;
+  }
+
+  .favorite-recipe-card {
+    width: 80%;
+  }
+
+}

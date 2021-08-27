@@ -1,0 +1,149 @@
+.loader {
+  align-items: center;
+  background: #fac065;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+}
+
+.wineglass {
+  height: 36px;
+  position: relative;
+}
+
+.wineglass:after {
+  background: white;
+  box-shadow: 0 0 1px white;
+  content: '';
+  height: 5px;
+  left: 5px;
+  position: absolute;
+  top: 47px;
+  width: 20px;
+}
+
+.top {
+  background: white;
+  border-radius: 0 0 36px 36px;
+  box-shadow: 0 0 1px white;
+  height: 36px;
+  width: 30px;
+}
+
+.top:before {
+  background: linear-gradient(transparent 50%, #f36e3e 50%);
+  border-radius: 50%;
+  bottom: 4px;
+  content: '';
+  height: 22px;
+  left: 4px;
+  position: absolute;
+  width: 22px;
+}
+
+.left .top:before {
+  animation: rotate2 2s linear infinite;
+}
+
+.right .top:before {
+  animation: rotate1 2s linear infinite;
+}
+
+.top:after {
+  background: white;
+  box-shadow: 0 0 1px white;
+  content: '';
+  height: 13px;
+  left: 12px;
+  position: absolute;
+  top: 35px;
+  width: 6px;
+}
+
+.left {
+  animation: rotate1 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.right {
+  animation: rotate2 2s cubic-bezier(0.39, 1.52, 0.46, 0.92) infinite;
+  display: inline-block;
+}
+
+@keyframes rotate1 {
+
+  0% { transform: rotate(0deg);}
+
+  50% { transform: rotate(22deg);}
+}
+
+@keyframes rotate2 {
+
+  0% { transform: rotate(0deg);}
+
+  50% { transform: rotate(-22deg);}
+}
+
+.drink-loader-ul {
+  animation: 2s fadeInUp infinite linear 2s;
+  height: 25px;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: relative;
+  width: 70px;
+}
+
+.drink-loader-ul li {
+  background: white;
+  box-shadow: 0 0 1px white;
+  height: 15px;
+  position: absolute;
+  transform-origin: bottom;
+  width: 6px;
+}
+
+.drink-loader-ul li:nth-child( 1 ) {
+  bottom: 5px;
+  left: 26px;
+  transform: rotate(-35deg);
+}
+
+.drink-loader-ul li:nth-child( 2 ) {
+  bottom: 8px;
+  left: 34px;
+}
+
+.drink-loader-ul li:nth-child( 3 ) {
+  bottom: 5px;
+  left: 42px;
+  transform: rotate(35deg);
+}
+
+@keyframes fadeInUp {
+
+  0% {
+    opacity: 0;
+    transform: scaleY(1);
+  }
+
+  33% {
+    opacity: 1;
+    transform: scaleY(1.4);
+  }
+
+  64% {
+    opacity: 0.1;
+    transform: scaleY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(1.3);
+  }
+}
