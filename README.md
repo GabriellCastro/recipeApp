@@ -1,5 +1,5 @@
 <h1 align="center"><img height="70" src="public/favicon.ico"></h1>
- <p align="center">O <strong>Ricepe</strong> é um app de de receitas, em sua versão mobile first e web, o intuito do app e ajudar as pessoas a melhorar na cozinha, tendo como favoritar suas receitas, ver elas sendo feitas na tela de progresso e ver detalhes da receita, com video de como fazer e dicas na tela de progresso.</p>  
+ <p align="center">O <strong>Recipe</strong> é um app de de receitas, em sua versão mobile first e web, o intuito do app e ajudar as pessoas a melhorar na cozinha, tendo como favoritar suas receitas, ver elas sendo feitas na tela de progresso e ver detalhes da receita, com video de como fazer e dicas na tela de progresso.</p>  
 <h1>
  <a href="https://recipe-beta.vercel.app/">Deploy Aqui!</a>
 </h1>
